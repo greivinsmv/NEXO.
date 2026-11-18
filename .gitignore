@@ -1,0 +1,17 @@
+# Datos locales y material privado del proceso de captura
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.db
+*.db-*
+.catalog-cache/
+data/replay/
+node_modules/
+__pycache__/
+*.pyc
+*.log

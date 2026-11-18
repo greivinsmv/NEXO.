@@ -1,0 +1,17 @@
+.game-history .chart{margin-top:24px}
+.history-values{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 6px}
+.history-values div{display:grid;gap:5px;min-width:0}
+.history-values span{color:var(--muted);font-size:12px}
+.history-values strong{color:var(--green);font:700 clamp(18px,2vw,25px)/1.1 'Space Grotesk',sans-serif;overflow-wrap:anywhere}
+.history-plot{position:relative}
+.history-plot svg{display:block;width:100%;margin:8px 0 0}
+.history-series-line{fill:none;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.history-dot{stroke:#0b1208;stroke-width:2}
+.history-empty{position:absolute;left:0;right:0;bottom:10px;margin:0;color:var(--muted);font-size:12px;text-align:center}
+.history-empty[hidden]{display:none}
+.history-legend{display:flex;flex-wrap:wrap;gap:8px 14px;border-top:1px solid var(--line);padding-top:15px;margin-top:14px}
+.history-legend-item{display:inline-flex;align-items:center;gap:6px;color:var(--text);font-size:12px;min-width:0}
+.history-legend-item strong{color:var(--muted);font-size:12px;font-weight:500;white-space:nowrap}
+.history-legend-swatch{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}
+.chart-bottom{gap:12px}
+@media(max-width:520px){.chart{padding:18px}.history-values{gap:8px}.history-values strong{font-size:20px}}

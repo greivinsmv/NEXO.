@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080908">
+  <meta name="description" content="NEXO: compara ofertas de videojuegos entre tiendas.">
+  <noscript><style>.page-loader{display:none!important}</style></noscript>
+  <title>NEXO — El precio correcto, en el momento correcto</title>
+  <link rel="stylesheet" href="styles.css?v=b721d6209b35">
+  <link rel="stylesheet" href="motion.css?v=123aa29b7c4a">
+  <link rel="stylesheet" href="pagination.css?v=6e8db1d47a03">
+  <link rel="stylesheet" href="orbit.css?v=6e4092606f7a">
+  <link rel="stylesheet" href="filters.css?v=b123eb7fec1e">
+  <link rel="stylesheet" href="search.css?v=22a6c4367e86">
+  <script src="live-data.js" defer></script>
+  <script src="catalog-loader.js?v=8714d1cb9ea7" defer></script><script type="application/x-nexo-script" data-after-catalog="data.js?v=ecc1fa68a877"></script><script type="application/x-nexo-script" data-after-catalog="app.js?v=5fd0b0aa4ba9"></script><script type="application/x-nexo-script" data-after-catalog="motion.js?v=1b8854ef1667"></script>
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Cargando NEXO"><div class="loader-orb" aria-hidden="true"><span class="loader-ring"></span><span class="loader-ring second"></span><span class="loader-core">N</span></div><span class="loader-wordmark">NEXO<span>.</span></span></div>
+  <a class="skip" href="#ofertas">Ir a las ofertas</a>
+  <header class="site-header wrap">
+    <a class="logo" href="#inicio" aria-label="NEXO, inicio">NEXO<span class="logo-dot">.</span></a>
+    <span class="demo-pill">DATOS DE FUENTES</span>
+    <nav aria-label="Navegación principal"><a href="#ofertas">Ofertas</a><a href="#metricas">Así funciona NEXO</a></nav>
+    <form id="header-search" class="header-search" role="search"><label class="sr-only" for="search">Buscar juegos</label><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar juegos o tiendas…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" class="search-panel" hidden></div></form>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">EL RADAR DE TUS PRÓXIMAS OFERTAS</p><h1 id="hero-title">El precio<br>correcto. En<br>el momento<br>correcto<span>.</span></h1><p class="hero-description">La red que conecta juegos y tiendas para ayudarte a encontrar el mejor precio.</p><a class="primary-button" href="#ofertas">Explorar ofertas <span aria-hidden="true">↗</span></a></div>
+      <div class="orb-stage"><div class="orb"><div class="orb-glow"></div><div id="orb-games" class="orb-games" role="group" aria-label="Juegos destacados"></div></div></div>
+      <a id="selected-game-link" class="price-glass" href="game.html" aria-label="Ver ficha del juego seleccionado"><span class="featured-offer-label">Oferta destacada</span><p id="selected-game-name" class="selected-game-name"></p><div class="glass-highlight"><strong></strong><span></span></div><div class="glass-row"><strong></strong><span></span></div><div class="glass-row muted"><strong></strong><span></span></div><small hidden style="display:none!important"></small></a>
+    </section>
+
+    <section id="ofertas" class="offers wrap" aria-labelledby="offers-title">
+      <div class="section-heading"><div><p class="eyebrow">CATÁLOGO</p><h2 id="offers-title">Ofertas para explorar</h2><p id="catalog-count" class="catalog-count"></p></div></div>
+      <div class="toolbar"><div class="display-options"><label class="page-size-label">Mostrar <select id="page-size" aria-label="Juegos por página"><option value="10">10</option><option value="20">20</option><option value="30">30</option></select></label><label class="sort-label">Ordenar <select id="sort"><option value="relevance">Relevancia</option><option value="players">Más jugados</option><option value="owners">Más adquiridos (estimación)</option><option value="rating">Mejor valoración de usuarios</option><option value="discount">Mayor descuento</option><option value="price">Menor precio</option><option value="name">Nombre</option></select></label><div class="view-toggle" role="group" aria-label="Vista del catálogo"><button id="view-grid" type="button" aria-label="Vista de tarjetas" aria-pressed="true" title="Tarjetas"><span aria-hidden="true">▦</span></button><button id="view-list" type="button" aria-label="Vista de lista" aria-pressed="false" title="Lista"><span aria-hidden="true">☰</span></button></div></div></div>
+      <div class="catalog-layout">
+        <div class="catalog-results"><div id="cards" class="card-grid" aria-live="polite"></div><div class="pagination-bar"><p id="page-summary" class="page-summary" aria-live="polite"></p><nav id="catalog-pagination" class="catalog-pagination" aria-label="Páginas del catálogo"></nav></div><p id="empty" class="empty" hidden>No hay juegos que coincidan con estos filtros.</p></div>
+        <aside class="filter-sidebar" aria-label="Filtros del catálogo"><details id="catalog-filters" open><summary>Filtros <span id="active-filter-count">0 activos</span></summary><div class="filter-panel-content"><div class="filter-panel-head"><p class="eyebrow">AFINA TU BÚSQUEDA</p><button id="clear-filters" type="button">Restablecer</button></div><div class="filter-field"><label class="filter-field-title" for="filter-min">Precio <small id="price-filter-currency"></small></label><div class="price-fields"><label>Desde <input id="filter-min" type="number" inputmode="decimal" min="0" placeholder="Mínimo"></label><label>Hasta <input id="filter-max" type="number" inputmode="decimal" min="0" placeholder="Máximo"></label></div></div><div class="filter-field"><label class="filter-field-title" for="filter-genre">Género</label><select id="filter-genre"><option value="">Todos los géneros</option></select></div><div class="filter-field"><p class="filter-field-title">Plataforma de lanzamiento</p><div id="platform-filter-options" class="platform-filter-options" role="group" aria-label="Filtrar por plataforma de lanzamiento"></div></div><div class="filter-field"><label class="multi-store-option"><input id="filter-multi-store" type="checkbox"> Con varias tiendas</label></div><div class="filter-field"><p class="filter-field-title">Tiendas disponibles</p><div id="store-filter-options" class="store-filter-options" role="group" aria-label="Filtrar por tienda con ofertas guardadas"></div></div></div></details></aside>
+      </div>
+    </section>
+
+    <section id="metricas" class="metrics wrap" aria-labelledby="metrics-title"><div><p class="eyebrow">TRANSPARENCIA</p><h2 id="metrics-title">Así funciona NEXO</h2><p>Consulta ofertas de juegos con precios observados por tienda. El historial conserva capturas fechadas para mostrar cómo cambian con el tiempo.</p></div><div class="metric-list"><div><span>Juegos en catálogo</span><strong id="metric-games">—</strong></div><div><span>Tiendas con ofertas</span><strong id="metric-stores">—</strong></div><div><span>Última captura</span><strong id="metric-captured">—</strong></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="logo" href="#inicio">NEXO<span class="logo-dot">.</span></a><span>Compara con contexto. Decide a tu ritmo.</span><span>Proyecto académico</span></footer>
+</body>
+</html>
