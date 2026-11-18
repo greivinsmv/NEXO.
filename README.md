@@ -2,7 +2,7 @@
 
 **English** | [Español](README.es.md)
 
-![NEXO game price radar](assets/nexo-banner.svg)
+![NEXO game price radar](assets/nexo-banner.jpg)
 
 **NEXO helps players discover games, compare PC offers and inspect observed price history.** It is an academic project built as a responsive catalog backed by a local SQLite data pipeline. The [live demo](https://greivinsmv.github.io/NEXO/) runs on GitHub Pages.
 
@@ -10,7 +10,7 @@ The current public snapshot contains **500 games**, offers from **13 stores**, a
 
 ## Features
 
-![Explore games, compare offers, inspect price history](assets/nexo-features.svg)
+![Explore games, compare offers, inspect price history](assets/nexo-features.jpg)
 
 - **Discover:** search 500 games; filter by genre, release platform, price or store; sort by relevance, popularity, user rating, discount or price.
 - **Choose your view:** switch between cards and a compact list, with pages of 10, 20 or 30 games.

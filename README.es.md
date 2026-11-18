@@ -2,7 +2,7 @@
 
 [English](README.md) | **Español**
 
-![Radar de ofertas de videojuegos de NEXO](assets/nexo-banner.svg)
+![Radar de ofertas de videojuegos de NEXO](assets/nexo-banner.jpg)
 
 **NEXO ayuda a descubrir juegos, comparar ofertas de PC y consultar el historial de precios observados.** Es un proyecto académico con una interfaz adaptable y un catálogo alimentado por una base SQLite local. La [demostración pública](https://greivinsmv.github.io/NEXO/) funciona en GitHub Pages.
 
@@ -10,7 +10,7 @@ La captura pública actual contiene **500 juegos**, ofertas de **13 tiendas** y 
 
 ## Funciones
 
-![Explora juegos, compara ofertas y consulta precios anteriores](assets/nexo-features.svg)
+![Explora juegos, compara ofertas y consulta precios anteriores](assets/nexo-features.jpg)
 
 - **Explora:** busca entre 500 juegos; filtra por género, plataforma de lanzamiento, precio o tienda; ordena por relevancia, popularidad, valoración, descuento o precio.
 - **Elige la vista:** alterna entre tarjetas y lista compacta, con páginas de 10, 20 o 30 juegos.
